@@ -1,0 +1,19 @@
+.PersonalData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Age{
+    border-radius: 40% !important; 
+}
+
+.Data{
+    text-align: left !important;
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+.Img{
+    padding-top: 5%;
+}
