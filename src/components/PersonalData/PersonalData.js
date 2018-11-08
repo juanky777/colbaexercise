@@ -1,4 +1,8 @@
 import React from 'react';
+import Languages from './Languages/Languages';
+import Qualificications from './Qualifications/Qualifications';
+import GeographicalCover from './GeographicalCover/GeographicalCover';
+import BankAccount from './BankAccount/BankAccount';
 import Lawyer from '../../assets/images/Lawyer.png';
 import { Button } from 'reactstrap';
 import './PersonalData.css';
@@ -7,6 +11,7 @@ import './PersonalData.css';
  * Do it with divs and not with Col and Row for using in the CSS flex display 
  */
 const PersonalData = () => (
+    <React.Fragment>
     <div className="PersonalData">
         <div className="Img">
             <img src={Lawyer} alt="Lawyer" className="rounded-circle" width="200"/>
@@ -24,6 +29,11 @@ const PersonalData = () => (
             <Button color="success" size="sm"><i className="fa fa-check"></i><p>Available</p></Button>
         </div>
     </div>
+    <Languages />
+    <Qualificications />
+    <GeographicalCover />
+    <BankAccount />
+    </React.Fragment>
 )
 
 export default PersonalData;

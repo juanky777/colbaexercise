@@ -1,0 +1,11 @@
+.title{
+    color: #65B61B;
+}
+
+tr{
+    text-align: left !important;
+}
+
+td,th{
+    border: none !important;
+}
